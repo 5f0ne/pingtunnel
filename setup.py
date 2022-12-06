@@ -5,7 +5,7 @@ with open("README.md", "r") as r:
 
 setup(
     name="pingtunnel",            
-    version="1.0.0",
+    version="1.0.1",
     author="5f0",
     url="https://github.com/5f0ne/pingtunnel",
     description="Test possible data exfiltration through ping requests",

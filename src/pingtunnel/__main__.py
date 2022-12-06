@@ -4,7 +4,7 @@ import argparse
 
 from icmplib import ping
 
-from src.pingtunnel.Controller import Controller
+from pingtunnel.Controller import Controller
 
 def round_up(n, decimals=0):
     multiplier = 10 ** decimals
