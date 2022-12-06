@@ -8,7 +8,7 @@ setup(
     version="1.0.0",
     author="5f0",
     url="https://github.com/5f0ne/pingtunnel",
-    description="ICMP Tunneling",
+    description="Test possible data exfiltration through ping requests",
     classifiers=[
         "Operating System :: OS Independent ",
         "Programming Language :: Python :: 3 ",
